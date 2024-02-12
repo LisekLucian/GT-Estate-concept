@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+        .house {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+        }
+        .house img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .buy-btn, .sold {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-btn:hover, .sold:hover {
+            background-color: #45a049;
+        }
+        .sold {
+            background-color: #FF0000;
+        }
+        .logo {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="text-align: center;">Welcome to GT Estate</h1>
+    <img class="logo" src="logo.png" alt="House Market Logo" style=" margin-left: auto; margin-right: auto;  display: block;">   
+    <div class="house">
+        <img src="beach/beachA0.png" alt="House 1">
+        <h2>beach A0</h2>
+        <p>Price: 75,000 sr</p>
+        <button class="sold" onclick="">SOLD!</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachA1.png" alt="House 1">
+        <h2>beach A1</h2>
+        <p>Price: 50,000 sr</p>
+        <button class="buy-btn" onclick="buyHouse(1)">Buy Now</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachB1.png" alt="House 2">
+        <h2>beach B1</h2>
+        <p>Price: 35,000 sr (negotiable)</p>
+        <button class="buy-btn" onclick="buyHouse(2)">Buy Now</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachB2.png" alt="House 3">
+        <h2>beach B2</h2>
+        <p>Price: 35,000 sr (negotiable)</p>
+        <button class="buy-btn" onclick="buyHouse(3)">Buy Now</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachB3.png" alt="House 4">
+        <h2>beach B3</h2>
+        <p>Price: 35,000 sr (negotiable)</p>
+        <button class="buy-btn" onclick="buyHouse(4)">Buy Now</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachB4.png" alt="House 5">
+        <h2>beach B3</h2>
+        <p>Price: 35,000 sr (negotiable)</p>
+        <button class="buy-btn" onclick="buyHouse(5)">Buy Now</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachC1.png" alt="House 6">
+        <h2>beach C1</h2>
+        <p>Price: 430,000 sr </p>
+        <button class="buy-btn" onclick="buyHouse(6)">Buy Now</button>
+    </div>
+    <div class="house">
+        <img src="beach/beachC2.png" alt="House 7">
+        <h2>beach C2</h2>
+        <p>Price: 800,000 sr </p>
+        <button class="buy-btn" onclick="buyHouse(7)">Buy Now</button>
+    </div>
+    <div id="message"></div>
+</div>
+
+<script>
+    function buyHouse(houseNumber) {
+        document.getElementById('message').innerHTML = `Congratulations! You have bought House ${houseNumber}.`;
+    }
+</script>
+
+</body>
+</html>
