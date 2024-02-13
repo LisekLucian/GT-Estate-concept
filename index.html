@@ -27,6 +27,18 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(255,255,255,0.1);
         }
+        .apartment {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #1666;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(166,255,255,0.1);
+        }
+        .apartment img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
         .house img {
             max-width: 100%;
             height: auto;
@@ -199,15 +211,50 @@
         <p>Price: 500,000 sr </p>
         <button class="buy-btn" onclick="buyHouse(22)">Buy Now</button>
     </div>
+    <h1 style="text-align: center;">CITY APARTMENTS</h1>
+    <div class="apartment">
+        <img src="city/cityB1.png" alt="Apartment 1">
+        <h2>City B1</h2>
+        <p>Price: 90,000 sr </p>
+        <button class="buy-btn" onclick="rentApartment(1)">Rent Now</button>
+    </div>	
+    <div class="apartment">
+        <img src="city/cityB2.png" alt="Apartment 2">
+        <h2>City B2</h2>
+        <p>Price: 110,000 sr </p>
+        <button class="buy-btn" onclick="rentApartment(2)">Rent Now</button>
+    </div>	
+    <div class="apartment">
+        <img src="city/cityC3.png" alt="Apartment 3">
+        <h2>City C1</h2>
+        <p>Price: 75,000 sr </p>
+        <button class="buy-btn" onclick="rentApartment(3)">Rent Now</button>
+    </div>	
+    <div class="apartment">
+        <img src="city/cityC2.png" alt="Apartment 4">
+        <h2>City C2</h2>
+        <p>Price: 62,500 sr </p>
+        <button class="buy-btn" onclick="rentApartment(4)">Rent Now</button>
+    </div>	
+    <div class="apartment">
+        <img src="city/cityC2.png" alt="Apartment 4">
+        <h2>City C3</h2>
+        <p>Price: 50,000 sr </p>
+        <button class="buy-btn" onclick="rentApartment(4)">Rent Now</button>
+    </div>	
 	
-	
+
     <div id="message"></div>
+	<div class="footer-text" style="text-align: center;"><h3>Discord server: https://discord.gg/YcDRyeneug</h3></div>
     <div class="footer-text" style="text-align: center;">All rights reserved to Another Axiom Inc. This website is independent and not affiliated with Gorilla Tag or Another Axiom Inc. It does not seek to imitate or present itself as an official product of Another Axiom Inc.</div>
 </div>
 
 <script>
     function buyHouse(houseNumber) {
         document.getElementById('message').innerHTML = `Congratulations! You have bought House ${houseNumber}.`;
+    }
+    function rentApartment(apartmentNumber) {
+        document.getElementById('message').innerHTML = `Congratulations! You have rented Apartment ${apartmentNumber}.`;
     }
 </script>
 
