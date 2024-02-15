@@ -51,7 +51,7 @@
             height: auto;
             border-radius: 5px;
         }
-        .house:not(.sold):hover,
+
 		
 		.seasonals {
 		    margin-bottom: 20px;
@@ -61,14 +61,21 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(166,255,255,0.1);
 			transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
-			}
+		}
+		
+	.seasonals:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		opacity: 0.8;
+		transform: scale(1.05);
+	}
 		
 		.seasonals img {
 		    max-width: 100%;
             height: auto;
             border-radius: 5px;
 		}
-	.seasonals:hover,
+		
+    .house:not(.sold):hover,
 	.house:hover,
 	.apartment:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -351,19 +358,19 @@
 		    <h1 style="text-align: center;">FOREST SEASONALS</h1>
 
 	<div class="seasonals">
-        <img src="forest/seasonal/CHRISTmasTree.png" alt="House 33" style="">
+        <img src="forest/seasonal/CHRISTmasTree.png" alt="House 33" >
         <h2>Christmas Tree</h2>
         <p>Price: 100 sr</p>
         <button class="buy-btn" onclick="buyHouse('christmas tree')">Buy Now</button>
     </div>
 	<div class="seasonals">
-        <img src="forest/seasonal/snowman.png" alt="House 34" style="">
+        <img src="forest/seasonal/snowman.png" alt="House 34" >
         <h2>Snowman</h2>
         <p>Price: 25 sr</p>
         <button class="buy-btn" onclick="buyHouse('snowman')">Buy Now</button>
     </div>
 	<div class="seasonals">
-        <img src="forest/seasonal/volcano.png" alt="House 35" style="">
+        <img src="forest/seasonal/volcano.png" alt="House 35" >
         <h2>Volcano</h2>
         <p>Price: 500 sr</p>
         <button class="buy-btn" onclick="buyHouse('volcano')">Buy Now</button>
