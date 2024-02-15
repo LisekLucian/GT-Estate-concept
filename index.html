@@ -12,6 +12,10 @@
             padding: 0;
             background-color: #222;
             color: #fff;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-attachment: fixed;
         }
         .container {
             max-width: 800px;
@@ -314,7 +318,7 @@
 
 <script>
 
-    // Function to get the player name and proceed with buying the house
+
     function confirmName() {
         const playerName = document.getElementById("playerNameInput").value;
         if (playerName.trim() !== "") {
@@ -374,7 +378,6 @@ Date: ${new Date().toLocaleDateString()}
 This ownership paper is issued in accordance with the virtual laws and regulations governing property ownership in Gorilla Tag.
 `;
 
-            // Open a new window and write the document content
             const newWindow = window.open();
             newWindow.document.open();
             newWindow.document.write('<pre>' + documentContent + '</pre>');
@@ -404,15 +407,29 @@ In witness whereof, the parties hereto have executed this agreement on the date 
 
 `;
 
-            // Open a new window and write the document content
             const newWindow = window.open();
             newWindow.document.open();
             newWindow.document.write('<pre>' + documentContent + '</pre>');
             newWindow.document.close();
         }
     }
-
 	
+	    const bgImages = [
+        "url('bg/1.png')",
+        "url('bg/2.png')",
+        "url('bg/3.png')",
+        "url('bg/4.png')",
+        "url('bg/5.png')",
+        "url('bg/6.png')",
+        "url('bg/7.png')",
+    ];
+
+    function setRandomBackground() {
+        const randomIndex = Math.floor(Math.random() * bgImages.length);
+        document.body.style.backgroundImage = bgImages[randomIndex];
+    }
+
+    setRandomBackground();
 </script>
 
 </body>
