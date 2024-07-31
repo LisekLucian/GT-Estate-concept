@@ -6,8 +6,12 @@
     <title>GT Estate</title>
     <style>
 	
+	@font-face {
+		font-family: "Utopium";
+		src: url('fonts/Utopium.ttf')
+	}
         body {
-            font-family: "Comic Sans MS", cursive;
+            font-family: "Utopium";
             margin: 0;
             padding: 0;
             background-color: #222;
@@ -17,6 +21,18 @@
             background-position: left top;
             background-attachment: fixed;
         }
+	  .background {
+            width: 100vw;
+            height: 100vh;
+	    z-index: -1;
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* Adjust blur level */
+            position: fixed; /* Ensure it takes up the full viewport */
+            top: 0;
+            left: 0;
+        }
+	    
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -489,8 +505,9 @@ In witness whereof, the parties hereto have executed this agreement on the date 
     ];
 
     function setRandomBackground() {
+    	const backgroundDiv = document.getElementById('background');
         const randomIndex = Math.floor(Math.random() * bgImages.length);
-        document.body.style.backgroundImage = bgImages[randomIndex];
+        backgroundDiv.style.backgroundImage = bgImages[randomIndex];
     }
 
     setRandomBackground();
