@@ -32,6 +32,10 @@
             top: 0;
             left: 0;
         }
+		
+		.blur {
+			filter: blur(8px);
+		}
         
         .container {
             max-width: 800px;
@@ -125,7 +129,6 @@
 <div class="container">
     <h1 style="text-align: center;">Welcome to GT Estate</h1>
     <img class="logo" src="LOGO.png" alt="House Market Logo" style=" margin-left: auto; margin-right: auto;  display: block;">   
-    <div class="footer-text" style="text-align: center;">This website is independent and not affiliated with Gorilla Tag or Another Axiom Inc. It does not seek to imitate or present itself as an official product of Another Axiom Inc.</div>
 
 
     <h1 style="text-align: center;">BEACH PROPERTIES</h1>
@@ -299,57 +302,24 @@
         <p>Price: 25,000 sr </p>
         <button class="buy-btn" onclick="rentApartment('C3')">Rent Now</button>
     </div>	
-	    <h1 style="text-align: center;">CLOUD PROPERTIES</h1>
-	<h6 style="text-align: center;">Interior not included!!!</h6>
+	    <h1 style="text-align: center;">SKY JUNGLE HOTEL</h1>
+		<h2 style="text-align: center; color: red;">!SPONSORED!</h6>
 
-    <div class="house">
-        <img src="clouds/CloudsA1.png" alt="House 23">
-        <h2>Clouds A1</h2>
-        <p>Price: 50,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A1')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA2.png" alt="House 24">
-        <h2>Clouds A2</h2>
-        <p>Price:  45,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A2')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA3.png" alt="House 25">
-        <h2>Clouds A3</h2>
-        <p>Price: 43,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A3')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA4.png" alt="House 26">
-        <h2>Clouds A4</h2>
-        <p>Price: 47,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A4')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA5.png" alt="House 27">
-        <h2>Clouds A5</h2>
-        <p>Price: 70,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A5')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA6.png" alt="House 28">
-        <h2>Clouds A6</h2>
-        <p>Price: 70,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A6')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA7.png" alt="House 28">
-        <h2>Clouds A7</h2>
-        <p>Price: 100,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A7')">Buy Now</button>
-    </div>
-    <div class="house">
-        <img src="clouds/CloudsA8.png" alt="House 29">
-        <h2>Clouds A8</h2>
-        <p>Price: 140,000 sr </p>
-        <button class="buy-btn" onclick="buyHouse('Clouds A8')">Buy Now</button>
-    </div>
+    <div class="apartment">
+        <img src="clouds/skyjunglehotel.png" alt="Apartment 5">
+        <h2>Sky Jungle Hotel</h2><h2 style="color: gray;"> (regular package)</h2>
+		<h4>Since 1998 we have created a safe space for our customers, regular package comes with your own small building.</h4>
+        <p>Price: <s style="color: red;">50,000 sr</s> 45,000 sr per week</p>
+        <button class="buy-btn" onclick="rentApartment('SkyJungleRegular')">Rent Now</button> 
+    </div>	
+	
+    <div class="apartment">
+        <img src="clouds/skyjunglehotel.png" alt="Apartment 5">
+        <h2>Sky Jungle Hotel</h2><h2 style="color: lime;"> (premium package)</h2>
+		<h4>Since 1998 we have created a safe space for our customers, premium package comes with your own vehicle and what the regular package offers.</h4>
+        <p>Price: <s style="color: red;">100,000 sr</s> 75,000 sr per week</p>
+        <button class="buy-btn" onclick="rentApartment('SkyJunglePremium')">Rent Now</button> 
+    </div>	
 	
 		    <h1 style="text-align: center;">FOREST PROPERTIES</h1>
 	
@@ -392,9 +362,12 @@
         <p>Price: 500 sr</p>
         <button class="buy-btn" onclick="buyHouse('volcano')">Buy Now</button>
     </div>
+<h1 style="text-align: center; color: lime;">We are currently working to buy the rights to some houses or buildings for the capital city. (metro)</h1>
 
     <div id="message"><h2 style="text-align: center;"></h2></div>
 	<div class="footer-text" style="text-align: center;"><h3>Discord server: https://discord.gg/YcDRyeneug</h3></div>
+    <div class="footer-text" style="text-align: center; color: red;">This website is independent and not affiliated with Gorilla Tag or Another Axiom Inc. It does not seek to imitate or present itself as an official product of Another Axiom Inc.</div>
+
 </div>
 
 <script>
